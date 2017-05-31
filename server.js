@@ -8,8 +8,8 @@ app.get('/', function(req, res) {
 	var operatingSystem = req.header('user-agent').split('(')[1].split(')')[0];
 
 	res.end(JSON.stringify({
-		ipaddress: language,
-		language: ipaddress,
+		ipaddress: ipaddress,
+		language: language,
 		software: operatingSystem
 	}));
 });
